@@ -15,5 +15,13 @@ const Parents = [
     email: "MondherBaccara020@gmail.com",
     children: ["RTWxmsj2MY"],
   },
+  {
+    id: "oeOSzzp4n8",
+    firstName: "Achref",
+    lastName: "Nen Slimeni",
+    password: "test1234",
+    email: "Achref@gmail.com",
+    children: ["RTWxmsj2MY", "Z2z0fPcNeP"],
+  },
 ];
 export default Parents;
