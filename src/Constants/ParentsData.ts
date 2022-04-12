@@ -18,7 +18,7 @@ const Parents = [
   {
     id: "oeOSzzp4n8",
     firstName: "Achref",
-    lastName: "Nen Slimeni",
+    lastName: "Ben Slimeni",
     password: "test1234",
     email: "Achref@gmail.com",
     children: ["RTWxmsj2MY", "Z2z0fPcNeP"],
