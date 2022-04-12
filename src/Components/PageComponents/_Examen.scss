@@ -1,0 +1,60 @@
+.examen {
+  width: calc(100% / 2 - 10px);
+  border: 1.5px solid #ededf0;
+  box-shadow: none !important;
+  &__subject {
+    background-color: #2ba7df;
+    width: fit-content;
+    color: white;
+    padding: 2px 18px;
+    border-radius: 5px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+  }
+  &__title {
+    font-size: 19.5px;
+    font-weight: 500;
+  }
+  &__prof-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 450;
+    color: #a2a2a7;
+    margin-top: 7px;
+    margin-bottom: 5px;
+    letter-spacing: 0.7px;
+    .date {
+      color: #c20000;
+      font-weight: 600;
+      font-size: 19px;
+      letter-spacing: normal;
+    }
+  }
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .examen__prof-date {
+    display: block;
+    p {
+      margin-bottom: 5px;
+    }
+  }
+  .downloads {
+    p {
+      margin-bottom: 5px;
+    }
+    margin-top: 10px;
+    & p:not(.examen__title) {
+      font-size: 17px;
+      font-weight: 500;
+      padding: 7.5px 0;
+      white-space: nowrap;
+    }
+  }
+}

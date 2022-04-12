@@ -1,0 +1,31 @@
+.popup {
+  position: absolute;
+  z-index: 1000;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 20px;
+  box-shadow: 0px 0px 3px #eee;
+  transition: all 0.5s;
+  &__response {
+    padding: 20px;
+    img {
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(118deg)
+        brightness(103%) contrast(104%);
+    }
+  }
+
+  &__message {
+    background-color: white;
+    padding: 20px;
+  }
+}
+
+.active {
+  top: 20px;
+}

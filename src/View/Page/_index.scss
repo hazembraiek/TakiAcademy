@@ -1,0 +1,70 @@
+@forward "./ChildGallery/index";
+@forward "./MenuChilds/menu";
+
+main {
+  display: flex;
+  height: calc(100vh - 75px);
+  margin-top: 75px;
+  position: relative;
+
+  .page__message {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color: #e1ae00;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 1;
+    span {
+      display: block;
+      width: 30px;
+      height: 35px;
+      background-color: white;
+      clip-path: polygon(
+        0% 22%,
+        100% 22%,
+        100% 75%,
+        75% 75%,
+        75% 100%,
+        50% 75%,
+        0% 75%
+      );
+      transform: rotate(-10deg);
+    }
+    transition: all 0.6s;
+  }
+  .Hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .page {
+    width: calc(100% - 330px);
+    background-color: #f8f8fd;
+    color: white;
+    padding-top: 15px;
+    padding-left: 25px;
+    overflow: scroll;
+    padding-bottom: 50px;
+    padding-right: 20px;
+    flex: 1;
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    scrollbar-color: #1e87f0 #f8f8fd;
+    scrollbar-width: thin;
+    &::-webkit-scrollbar-thumb {
+      background-color: #1e87f0;
+      border-radius: 8px;
+    }
+    &::-webkit-scrollbar:horizontal {
+      height: 0;
+      width: 0;
+      display: none;
+    }
+  }
+}

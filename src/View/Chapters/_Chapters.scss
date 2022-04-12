@@ -1,0 +1,223 @@
+.chapters {
+  column-gap: 15px;
+  color: black;
+  .test {
+    width: 500px;
+    height: 6px;
+    background-color: #eee;
+    div {
+      background-color: red;
+      height: 100%;
+    }
+  }
+  &__Gallery {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15px;
+  }
+  &__subjects {
+    width: 315px;
+    background-color: white;
+    height: fit-content;
+    .subject {
+      display: flex;
+      align-items: center;
+      img {
+        width: 60px;
+        height: 60px;
+      }
+      .name {
+        font-size: 22px;
+        margin-left: 12px;
+        color: #18698d;
+      }
+    }
+    .progress-sub {
+      display: flex;
+      justify-content: space-between;
+      font-size: 22px;
+      color: #4a3c98;
+      font-weight: 600;
+      margin-bottom: 6px;
+      margin-top: 16px;
+    }
+    .progress-bar {
+      height: 6px;
+      background-color: #e3e3e4;
+      border-radius: 5px;
+      overflow: hidden;
+      div {
+        width: 20%;
+        height: 100%;
+        border-radius: 5px;
+        background-color: #ed5454;
+        transition: all 0.3s;
+      }
+    }
+    .subject__nb {
+      margin-top: 24px;
+      p {
+        color: #a9a9ae;
+        font-size: 12px;
+        margin-bottom: 8px;
+        span {
+          color: #18698d;
+          font-size: 12px;
+          font-weight: 600;
+        }
+      }
+    }
+    .others {
+      margin-top: 16px;
+      &__title {
+        color: #2ba7df;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      &-subject-info {
+        width: 74%;
+      }
+      &__subject {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px;
+        margin-bottom: 8px;
+        border-bottom: 1px solid #ddd;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        &:hover {
+          background: rgba(233, 248, 253, 0.6);
+          border-radius: 4px;
+        }
+      }
+      .subject-icon--name {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 500;
+        color: #18698d;
+        column-gap: 8px;
+        margin-bottom: 8px;
+      }
+      .subject-progressBar {
+        height: 6px;
+        background-color: #e3e3e4;
+        border-radius: 5px;
+        overflow: hidden;
+        div {
+          width: 20%;
+          height: 100%;
+          border-radius: 5px;
+          background-color: #ed5454;
+          transition: all 0.3s;
+        }
+      }
+      .subject-progress-nb {
+        font-size: 18px;
+        font-weight: 500;
+        color: #4a3c98;
+      }
+    }
+    .more {
+      width: fit-content;
+      margin: auto;
+      color: #8bb4c6;
+      font-size: 15px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      &:hover {
+        color: rgba(43, 167, 223, 0.5019607843137255);
+      }
+    }
+  }
+  &__content {
+    width: 71%;
+    background-color: white;
+    height: fit-content;
+    flex: 1;
+  }
+  &--header {
+    ul {
+      display: flex;
+      flex-direction: row;
+      margin-top: 0;
+      padding-top: 6px;
+      li {
+        color: #8bb4c6;
+        font-size: 18px;
+        margin-right: 12px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+          font-weight: 600;
+          color: #18698d;
+        }
+      }
+    }
+  }
+  &-container {
+    .chapter {
+      display: flex;
+      border: 1px solid #2ba7df;
+      border-radius: 12px;
+      padding: 18px 32px;
+      margin-bottom: 18px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      &:hover {
+        background-color: rgba(233, 248, 253, 0.6);
+      }
+      .details {
+        margin: 10px 5px;
+        width: 100%;
+      }
+      .number {
+        color: #ed5454;
+        font-size: 28px;
+        font-weight: 600;
+        margin-right: 18px;
+      }
+      .title {
+        color: #18698d;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+      }
+      .info {
+        display: flex;
+        justify-content: space-between;
+        p {
+          color: #a2a2a7;
+          font-size: 12px;
+        }
+      }
+      .progress {
+        &-container {
+          display: flex;
+          align-items: center;
+          margin-top: 12px;
+        }
+        &-bar {
+          background: #e3e3e4;
+          height: 6px;
+          width: 100%;
+          border-radius: 6px;
+          div {
+            height: 100%;
+            background-color: #ed5454;
+            border-radius: 6px;
+            transition: all 0.3s;
+          }
+        }
+        &-percentage {
+          color: #4a3c98;
+          font-size: 20px;
+          font-weight: 600;
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+}

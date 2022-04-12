@@ -1,0 +1,39 @@
+.divInput {
+  width: 100%;
+  input {
+    width: 100%;
+    height: 45px;
+    border: 2px solid #b9b9bdaf;
+    border-radius: 5px;
+    font-size: 17px;
+    padding-left: 24px;
+    font-family: inherit;
+    padding-right: 10px;
+    &::placeholder {
+      color: #aaaaaa;
+      font-family: inherit;
+      font-size: 20px;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .divInput {
+    width: 100%;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  .is-invalid {
+    background-color: rgba(255, 0, 0, 0.116) !important;
+  }
+
+  .error {
+    position: absolute;
+    color: red;
+    font-size: 0.6rem;
+    left: 10px;
+    display: none;
+  }
+}

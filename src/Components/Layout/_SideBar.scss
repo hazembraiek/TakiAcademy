@@ -1,0 +1,68 @@
+.sidebar {
+  transition: all 0.4s;
+  nav {
+    position: relative;
+    z-index: 1;
+  }
+  width: 330px;
+  background: transparent linear-gradient(180deg, #40bcf9, #1e87f0) 0 0
+    no-repeat padding-box;
+  padding: 20px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 25px;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 560px;
+    height: 600px;
+    background-color: #40bcf973;
+    border-radius: 50%;
+    top: 49%;
+    left: -136px;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 2px 0;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s;
+    img {
+      filter: invert(100%) sepia(44%) saturate(2%) hue-rotate(247deg)
+        brightness(101%) contrast(100%);
+    }
+    p {
+      margin-left: 18px;
+    }
+  }
+}
+
+.active {
+  li {
+    background-color: white;
+    color: #18698d;
+    & img {
+      filter: invert(35%) sepia(19%) saturate(2744%) hue-rotate(160deg)
+        brightness(87%) contrast(85%);
+    }
+  }
+}
+
+.activeSetting {
+  width: 145px;
+  padding: 23px;
+  li {
+    flex-direction: column;
+    padding: 13px;
+    p {
+      margin: 0;
+      text-align: center;
+    }
+  }
+}

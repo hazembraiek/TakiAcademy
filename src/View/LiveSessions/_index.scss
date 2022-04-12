@@ -1,0 +1,15 @@
+.live {
+  color: black;
+  background-color: white;
+  table td {
+    padding: 2px 5px;
+  }
+}
+table td img {
+  width: 30px !important;
+  height: 30px !important;
+  padding: 6.5px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ebebf3;
+}

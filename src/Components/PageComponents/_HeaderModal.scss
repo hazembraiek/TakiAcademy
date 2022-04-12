@@ -1,0 +1,18 @@
+.header__modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h2 {
+    margin: 0;
+    font-size: 19px;
+  }
+  .icon_exit {
+    width: 29px;
+    height: 29px;
+    cursor: pointer;
+    img {
+      filter: invert(47%) sepia(51%) saturate(694%) hue-rotate(154deg)
+        brightness(109%) contrast(90%);
+    }
+  }
+}

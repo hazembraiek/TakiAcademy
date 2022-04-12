@@ -1,0 +1,199 @@
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  height: 75px;
+  position: fixed;
+  top: 0;
+  width: inherit;
+  @include flex();
+  &__setting-logo {
+    width: 330px;
+    height: 100%;
+    padding: 0 25px 0 20px;
+    @include flex();
+    .logo {
+      @include flex();
+      cursor: pointer;
+      user-select: none;
+      span {
+        font-size: 25px;
+        font-weight: 500;
+        color: #2ba7df;
+        margin-left: 11px;
+      }
+      img {
+        width: 50px;
+      }
+    }
+    .setting {
+      padding: 7.5px;
+      background-color: #efefef;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      cursor: pointer;
+    }
+  }
+  &__input-userInfo {
+    width: 1065px;
+    @include flex();
+    .input {
+      @include flex();
+      border: 1.9px solid #bfbfbf;
+      border-radius: 10px;
+      width: 520px;
+      height: 45px;
+      padding: 0 10px;
+      input {
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        font-family: inherit;
+        font-size: 20px;
+        margin-left: 5px;
+        &::placeholder {
+          color: #bfbfbf;
+          font-size: 20px;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+      .search {
+        &-input {
+          width: 100%;
+        }
+        &-icon {
+          margin: 0 7px -3px 10px;
+          img {
+            filter: invert(53%) sepia(100%) saturate(362%) hue-rotate(154deg)
+              brightness(90%) contrast(94%);
+          }
+        }
+      }
+    }
+    .user-Info {
+      width: 460px;
+      height: 45px;
+      @include flex();
+      .money {
+        cursor: pointer;
+        @include flex();
+        &__icon {
+          width: 45px;
+          height: 45px;
+          filter: invert(35%) sepia(19%) saturate(2744%) hue-rotate(160deg)
+            brightness(87%) contrast(85%);
+        }
+        &__description {
+          margin-left: 8px;
+          line-height: 16px;
+          p {
+            font-size: 15px;
+            color: #a2a2a7;
+          }
+          p:last-child {
+            font-size: 20px;
+            font-weight: 600;
+            color: #18698d;
+          }
+        }
+      }
+      .more-info {
+        position: absolute;
+        bottom: -10px;
+        right: 20px;
+      }
+      .message {
+        @include flex();
+        position: relative;
+        cursor: pointer;
+        &__icon {
+          width: 30px;
+          filter: invert(35%) sepia(19%) saturate(2744%) hue-rotate(160deg)
+            brightness(87%) contrast(85%);
+        }
+        &__number {
+          position: absolute;
+          width: 22px;
+          height: 22px;
+          line-height: 13px;
+          font-size: 15px;
+          text-align: center;
+          top: -9px;
+          left: 19px;
+          padding: 5px;
+          background-color: red;
+          border-radius: 50%;
+          color: white;
+          font-weight: 500;
+        }
+      }
+      .profile {
+        @include flex();
+        position: relative;
+        column-gap: 5px;
+        margin-right: 10px;
+        cursor: pointer;
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.04);
+        }
+        &__info {
+          margin-right: 10px;
+          p {
+            color: #a2a2a7;
+            font-size: 15px;
+          }
+          p:first-child {
+            font-size: 18px;
+            line-height: 20px;
+            color: #2ba7df;
+            font-weight: 500;
+          }
+        }
+        &__img {
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-right: 8px;
+        }
+        span {
+          margin-right: 7px;
+          filter: invert(35%) sepia(19%) saturate(2744%) hue-rotate(160deg)
+            brightness(87%) contrast(85%);
+        }
+        &__animation {
+          position: absolute;
+          top: 13px;
+          left: 50px;
+          width: 15px;
+          height: 15px;
+          transform-style: flat;
+          background: rgba(white, 0.5);
+          border-radius: 100%;
+          transition: width 0.3s ease, height 0.3s ease;
+        }
+      }
+    }
+  }
+}
+
+.resizeImg {
+  width: 100%;
+  height: 100%;
+}
+
+.mediumSizeImg {
+  width: 25px;
+  height: 25px;
+}
+
+.smallSizeImg {
+  width: 15px;
+  height: 15px;
+}

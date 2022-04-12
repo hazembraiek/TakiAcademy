@@ -1,0 +1,38 @@
+@use "./Assets/Styles/Abstracts/Variables" as C;
+@use "./Components/index" as *;
+@use "./View/index" as *;
+@use "./UI/index" as *;
+
+body {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 1520px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.App {
+  max-width: 1520px;
+  width: 1520px;
+  position: relative;
+}

@@ -1,0 +1,47 @@
+.Pagination {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #a2a2a7;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 21px;
+  margin-top: 23px;
+  margin-bottom: 15px;
+  select {
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #a2a2a7;
+    background-color: transparent;
+    &:focus {
+      outline: none;
+    }
+  }
+  .icons {
+    span {
+      cursor: pointer;
+      &:hover {
+        img {
+          filter: invert(0%) sepia(30%) saturate(5175%) hue-rotate(205deg)
+            brightness(100%) contrast(108%);
+        }
+      }
+    }
+    img {
+      width: 18px;
+      height: 18px;
+      transform: rotate(90deg);
+      filter: invert(74%) sepia(7%) saturate(146%) hue-rotate(201deg)
+        brightness(88%) contrast(87%);
+    }
+    &__right {
+      margin-left: 25px;
+      img {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+export const ToggleData = {
+  Setting: false,
+  ExameDetails: false,
+  exame: { title: "", subject: "", prof: "", date: "" },
+  ToggleModal: false,
+  TypeModal: "",
+  ClickedSubject: "",
+  Child: null,
+  ChildExist: false,
+  liveDetails: false,
+  idLive: "",
+  PagginationPage: 1,
+  Paggination: 5,
+  AllSubject: false,
+  Session: null,
+  ChildValid: true,
+};

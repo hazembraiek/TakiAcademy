@@ -1,0 +1,29 @@
+.download {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dff1f5;
+  border-radius: 4px;
+  overflow: hidden;
+  padding-left: 8px;
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-width: 180px;
+    padding: 6.5px 32px;
+    font-size: 16.5px;
+    min-height: 30px;
+    column-gap: 5px;
+    border-radius: 0;
+    img {
+      filter: invert(88%) sepia(88%) saturate(3%) hue-rotate(266deg)
+        brightness(112%) contrast(97%);
+    }
+  }
+  margin-bottom: 15px;
+  &:last-child {
+    margin: 0;
+  }
+}

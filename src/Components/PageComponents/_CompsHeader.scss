@@ -1,0 +1,35 @@
+.CompsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  span {
+    margin-right: 10px;
+    img {
+      width: 30px;
+      height: 30px;
+      filter: invert(36%) sepia(77%) saturate(1992%) hue-rotate(340deg)
+        brightness(103%) contrast(85%);
+    }
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+  }
+  &__text {
+    color: #ec5542;
+    font-size: 21.1px;
+    font-weight: bold;
+    letter-spacing: 0.1px;
+    margin-bottom: 7px;
+  }
+}
+
+.blue-Color {
+  color: #2ba7df;
+  font-weight: 700;
+}
+
+.border {
+  border-bottom: 3px solid #40ccfe;
+}

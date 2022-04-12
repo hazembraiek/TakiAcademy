@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57.598" height="54" viewBox="0 0 57.598 54">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.067" y1="0.04" x2="1" y2="0.82" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#80c56e"/>
+      <stop offset="1" stop-color="#0d9f0d"/>
+    </linearGradient>
+  </defs>
+  <g id="Groupe_7260" data-name="Groupe 7260" transform="translate(-650 -449)">
+    <path id="Tracé_7472" data-name="Tracé 7472" d="M0,68.3V24.43a8.447,8.447,0,0,1,8.437-8.437H49.161A8.447,8.447,0,0,1,57.6,24.43v27a8.447,8.447,0,0,1-8.437,8.437H12.511L2.881,69.5A1.689,1.689,0,0,1,0,68.3Z" transform="translate(650 433.007)" fill="url(#linear-gradient)"/>
+    <text id="أ_ب_ت" data-name="أ ب ت" transform="translate(658 475)" fill="#fff" font-size="16" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">أ ب ت</tspan></text>
+  </g>
+</svg>

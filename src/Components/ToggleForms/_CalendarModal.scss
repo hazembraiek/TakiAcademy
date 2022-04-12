@@ -1,0 +1,61 @@
+.calendar-modal {
+  width: 700px;
+  h2 {
+    font-size: 21px;
+  }
+  &-subject {
+    background-color: #2ba7df;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: white;
+    padding: 2px 18px;
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 25px 0 20px;
+  }
+  &-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 32px;
+  }
+  &-prof {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      color: #a2a2a7;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 29px;
+      span {
+        color: #2ba7df;
+      }
+    }
+  }
+  .duration {
+    color: #a2a2a7;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 29px;
+    span {
+      color: #2ba7df;
+    }
+    margin-bottom: 18px;
+  }
+  .niveau {
+    span {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 13.5px;
+      line-height: 22px;
+      color: red;
+      letter-spacing: 0.5px;
+      padding: 1px 7px;
+      border-radius: 8px;
+      border: 1px solid red;
+      margin-right: 10px;
+    }
+  }
+}
