@@ -65,8 +65,8 @@ const ToggleSlice = createSlice({
     setSession(state, action: PayloadAction<sessionsType>) {
       state.Session = action.payload;
     },
-    CheckIdChild(state) {
-      state.ChildValid = false;
+    CheckIdChild(state, action: PayloadAction<boolean>) {
+      state.ChildValid = action.payload;
     },
   },
 });

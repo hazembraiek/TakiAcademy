@@ -44,8 +44,10 @@ function DispatchData(id: string, pathname: string) {
     (state) => state.Data.sections
   );
   const Child = Children.find((child) => child.id === pathname.split("/")[2]);
-  if (!Child) {
-    dispatch(ToggleAction.CheckIdChild());
+  if (!Child && pathname.split("/")[2]) {
+    dispatch(ToggleAction.CheckIdChild(false));
+  } else {
+    dispatch(ToggleAction.CheckIdChild(true));
   }
   useEffect(() => {
     dispatch(
