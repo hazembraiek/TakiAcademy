@@ -9,6 +9,7 @@ import Sections from "../../Constants/Sections";
 import HistoryPoints from "../../Constants/HistoryPoints";
 import Parents from "../../Constants/ParentsData";
 import moment from "moment";
+import { stat } from "fs/promises";
 
 const getCurrentWeek = () => {
   let startOfWeek = moment().startOf("isoWeek");
@@ -54,6 +55,9 @@ const DataSlice = createSlice({
       state.sections
         .find((section) => section.title === action.payload.section)
         ?.children.push(action.payload.id);
+    },
+    resetWeek(state) {
+      state.Week = getCurrentWeek();
     },
   },
 });

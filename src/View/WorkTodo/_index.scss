@@ -46,6 +46,7 @@
   .current__week {
     display: flex;
     align-items: center;
+    cursor: pointer;
     filter: invert(60%) sepia(100%) saturate(243%) hue-rotate(155deg)
       brightness(95%) contrast(91%);
     font-size: 14px;

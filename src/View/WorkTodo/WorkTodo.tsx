@@ -139,7 +139,10 @@ function WorkTodo() {
               <img src={Angle} alt="" className="smallSizeImg" />
             </div>
           </div>
-          <div className="current__week">
+          <div
+            className="current__week"
+            onClick={() => dispatch(DataAction.resetWeek())}
+          >
             <img src={calendare} alt="" className="smallSizeImg" />
             <p>Cette semaine </p>
             <img src={Check} alt="" className="smallSizeImg" />
